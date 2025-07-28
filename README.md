@@ -21,16 +21,16 @@ Choose your preferred installation method:
 
 ```bash
 # npm
-npm i --save hyperliquid
+npm i --save @hyperfoundation/sdk
 
 # yarn
-yarn add hyperliquid
+yarn add @hyperfoundation/sdk
 
 # pnpm
-pnpm add hyperliquid
+pnpm add @hyperfoundation/sdk
 
 # bun
-bun i hyperliquid
+bun i @hyperfoundation/sdk
 ```
 
 ### Node.js Version Requirements for WebSocket Functionality
@@ -45,11 +45,11 @@ npm install ws
 
 ```html
 <!-- Global bundle (UMD) - Use this with script tags -->
-<script src="https://unpkg.com/hyperliquid/dist/browser.global.js"></script>
+<script src="https://unpkg.com/@hyperfoundation/sdk@latest/dist/browser.global.js"></script>
 
 <!-- ESM bundle - Use this with ES modules -->
 <script type="module">
-  import { Hyperliquid } from 'https://unpkg.com/hyperliquid/dist/browser.js';
+  import { Hyperliquid } from 'https://unpkg.com/@hyperfoundation/sdk@latest/dist/browser.js';
 </script>
 ```
 
@@ -68,7 +68,7 @@ If you don't do this you will be unable to use some of the SDK methods successfu
 your own Private Key then it's not necessary as the SDK can derive your wallet address from the Private key.
 
 ```typescript
-const { Hyperliquid } = require('hyperliquid');
+const { Hyperliquid } = require('@hyperfoundation/sdk');
 
 const sdk = new Hyperliquid({
   enableWs: true, // boolean (OPTIONAL) - Enable/disable WebSocket functionality, defaults to true
@@ -653,7 +653,7 @@ If you encounter any issues with the SDK, please use the bug report template whe
 
 To report a bug:
 
-1. Go to the [Issues tab](https://github.com/nomeida/hyperliquid/issues)
+1. Go to the [Issues tab](https://github.com/cupcakez2d/hyperliquid/issues)
 2. Click "New Issue"
 3. Select the "Bug Report" template
 4. Fill in all the requested information, including:
